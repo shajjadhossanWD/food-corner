@@ -29,7 +29,7 @@ const displayFood = meals =>{
     const foodDiv = document.getElementById('displayFoods');
     foodDiv.innerHTML= '';
     // foodDiv.textContent= '';
-    if(foodDiv.innerHTML == '' ){
+    if(meals.length == 0){
         const emptydiv = document.createElement('div');
         emptydiv.classList.add('emptydiv');
         emptydiv.innerHTML= `
